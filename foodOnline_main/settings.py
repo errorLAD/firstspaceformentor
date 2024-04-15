@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = ['194.195.118.42', '127.0.0.1', 'djangofoodonline.com', 'www.djangofoodonline.com']
+ALLOWED_HOSTS = ['https://web-production-240a1.up.railway.app/','web-production-240a1.up.railway.app', '127.0.0.1', 'djangofoodonline.com', 'www.djangofoodonline.com']
 
 
 # Application definition
