@@ -1,0 +1,334 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<!-- Main Section Start -->
+
+<div class="bg-white">
+	<!-- Home Pages Elements Strat -->
+	<!-- Main Search Start -->
+
+	
+		
+		<div class="container w3-hide-small">
+			<div class="row py-8">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+					<div class="relative isolate ">
+						<div class="" aria-hidden="true">
+						  <div class=""></div>
+						</div>
+						<div class="mx-auto max-w-6xl px-8 py-32 sm:py-8 lg:py-6">
+						  <div class="hidden sm:mb-8 ">
+							<div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+							  Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+							</div>
+						  </div>
+						  <div class="">
+							<h1 class=" text-gray-900 sm:text-6xl"><span class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text">Easily discover mentors, advisors,</span><br> astrologers, tutors, and more with just<span class="text-4xl"> one clicks </span></h1>
+
+							
+						  </div>
+						</div>
+				
+					  </div>
+					</div>
+                   
+				</div>
+			    
+				
+				
+
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+					<div class="main-search fancy mx-auto max-w-6xl px-8 ">
+						<form action="{% url 'search' %}" method="GET">
+							<div class="row">
+								<div class="col-lg-5 col-md-4 col-sm-3 col-xs-12">
+									<div class="field-holder shadow-lg shadow-blue-500/50 ">
+										<input type="text" name="keyword" placeholder="Expert name">
+									</div>
+								</div>
+								<div class="col-lg-5 col-md-4 col-sm-5 col-xs-12">
+									<div class="field-holder shadow-lg shadow-blue-500/50 ">
+										<ul>
+											<li class="select-location">
+												<div class="foodbakery-locations-fields-group foodbakery-focus-out">
+													<span class="foodbakery-search-location-icon"><i class="icon-location"></i></span>
+													
+													<input type="text" name="address" class="location-field-text filter" id="id_address" required placeholder="All Locations">
+													<input type="hidden" name="lat" value="" id="id_latitude">
+													<input type="hidden" name="lng" value="" id="id_longitude">
+												</div>
+												
+											</li>
+										</ul>
+									</div>
+								</div>
+							
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+									<div class="field-holder">
+										<input type="submit" value="Search" class="btn btn-primary">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--smallscreen-->
+		<div class="container w3-hide-large bg-white">
+			<div class="row ">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+					<div class="relative isolate ">
+						<div class="" aria-hidden="true">
+						  <div class=""></div>
+						</div>
+						<div class="mx-auto max-w-6xl px-8 py-4 sm:py-8 lg:py-6">
+						  <div class="hidden sm:mb-8 ">
+							<div class="relative rounded-full px-4 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+							  Announcing our next round of funding. <a href="#" class="font-semibold text-indigo-600"><span class="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+							</div>
+						  </div>
+						  <div class="">
+							<h4 class="text-2xl  tracking-tight text-gray-900 ">Easily discover mentors, advisors,astrologers,tutors, and more with just<span class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 inline-block text-transparent bg-clip-text"> one clicks </span></h4>
+							<p class="text-smleading-8 text-gray-400"><small>Find the best mentor for less than the cost of a burger</small></p>
+
+							
+						  </div>
+						</div>
+				
+					  </div>
+					</div>
+                   
+				</div>
+			    
+				
+				
+
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+					<div class="main-search fancy mx-auto max-w-7xl px-6 ">
+						<form action="{% url 'search' %}" method="GET">
+							<div class="row">
+								<div class="col-lg-5 col-md-4 col-sm-3 col-xs-12">
+									<div class="field-holder shadow-lg shadow-blue-500/50 ">
+										<input type="text" name="keyword" placeholder="Expert name">
+									</div>
+								</div>
+								<div class="col-lg-5 col-md-4 col-sm-5 col-xs-12">
+									<div class="field-holder shadow-lg shadow-blue-500/50 ">
+										<ul>
+											<li class="select-location">
+												<div class="foodbakery-locations-fields-group foodbakery-focus-out">
+													<span class="foodbakery-search-location-icon"><i class="icon-location"></i></span>
+													
+													<input type="text" name="address" class="location-field-text filter" id="id_address" required placeholder="All Locations">
+													<input type="hidden" name="lat" value="" id="id_latitude">
+													<input type="hidden" name="lng" value="" id="id_longitude">
+												</div>
+												
+											</li>
+										</ul>
+									</div>
+								</div>
+							
+								<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+									<div class="field-holder">
+										<input type="submit" value="Search" class="btn btn-primary">
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				
+			
+			<!--image-->
+			<div class="mx-auto max-w-6xl px-8 py-4 ">
+				<div class="swiffy-slider slider-item-show2  slider-nav-autoplay slider-nav-autopause " data-slider-nav-autoplay-interval="8000">
+					<div class="slider-container">
+						<div><img class="h-full" src="https://i.postimg.cc/7b8M0F8X/Add-a-subheading-15.png" alt="..." class="rounded-full w-96 h-96"></div>
+						<div><img src="https://i.postimg.cc/gkfFGXMs/Add-a-subheading-19.png" loading="lazy" alt="..."></div>
+				   
+				  </div>
+				
+				
+				</div>
+				</div>
+			
+			
+			
+			
+			
+			
+			</div>
+<!--addnews-->
+<div class="bg-white">
+<div class="mx-auto max-w-6xl px-8 py-4 w3-hide-small bg-white">
+<div class="swiffy-slider slider-item-show2   slider-nav-autopause bg-white " data-slider-nav-autoplay-interval="8000">
+    <div class="slider-container">
+        <div><img class="h-full" src="https://i.postimg.cc/7b8M0F8X/Add-a-subheading-15.png" alt="..." class="rounded-full w-96 h-96"></div>
+        <div><img src="https://i.postimg.cc/gkfFGXMs/Add-a-subheading-19.png" loading="lazy" alt="..."></div>
+   
+  </div>
+
+
+</div>
+</div>
+</div>
+
+
+
+</div>
+	<!-- Main Search End -->
+
+	<!-- Top Restarurants Section Start -->
+	<div class=" bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% page-section nopadding cs-nomargin" style="margin-top: 0px;padding-top: 60px;padding-bottom: 0px;margin-bottom: 0px;background: #ffffff;">
+		<div class="container max-w-6xl px-8">
+
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="element-title align-left">
+						<h2>Top Mentor</h2>
+						<p>Explore Expert by locality</p>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding-right: 0 !important; padding-left: 0 !important;">
+					<div class="company-logo">
+						<ul>
+							{% for vendor in vendors %}
+							<li class="has-border">
+								<figure>
+									{% if vendor.user_profile.profile_picture %}
+									<a href="{% url 'vendor_detail' vendor.vendor_slug %}"><img src="{{ vendor.user_profile.profile_picture.url }}" height="125" class="attachment-full size-full wp-post-image" alt=""></a>
+									{% else %}
+									<a href="{% url 'vendor_detail' vendor.vendor_slug %}"><img src="{% static 'images/default-profile.png' %}" height="125" class="attachment-full size-full wp-post-image" alt=""></a>
+									{% endif %}
+								</figure>
+							</li>
+							{% endfor %}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Top Restarurants Section End -->
+<!--add new in 13-04-2024-->
+
+
+
+	<!-- Choose From Most Popular Listin Start -->
+	<div class="page-section nopadding cs-nomargin" style="margin-top: 0px;padding-top: 60px;padding-bottom: 50px;margin-bottom: 0px;background: #ffffff;">
+		<div class="container max-w-6xl px-8">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="element-title align-center">
+						<h2>Choose From Most Popular Mentor</h2>
+						<p> Find the best mentor for less than the cost of a burger.</p>
+					</div>
+				</div>
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="listing fancy">
+						<ul class="row">
+							{% for vendor in vendors %}
+							<li class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+								<div class="list-post featured">
+									<div class="img-holder">
+										<figure>
+											<a href="{% url 'vendor_detail' vendor.vendor_slug %}">
+												{% if vendor.user_profile.profile_picture %}
+												<img src="{{ vendor.user_profile.profile_picture.url }}" class="img-thumb wp-post-image" alt="">
+												{% else %}
+												<img src="{% static 'images/default-profile.png' %}" class="img-thumb wp-post-image" alt="">
+												{% endif %}
+											</a>
+										</figure>
+										{% if vendor.is_open %}
+										<span class="restaurant-status open">
+											<em class="bookmarkRibbon"></em>Online
+										</span>
+										{% else %}
+										<span class="restaurant-status close">
+											<em class="bookmarkRibbon"></em>Ofline
+										</span>
+										{% endif %}
+
+									</div>
+									<div class="text-holder">
+										
+										<div class="post-title">
+											<h5>
+												<a href="{% url 'vendor_detail' vendor.vendor_slug %}">{{ vendor }}</a>
+											</h5>
+										</div>
+										{% if vendor.user_profile.city and vendor.user_profile.state and vendor.user_profile.pin_code %}
+										<span>{{ vendor.user_profile.city }}, {{ vendor.user_profile.state }}, {{ vendor.user_profile.pin_code }}</span>
+										{% endif %}
+
+										{% if vendor.kms %}
+											<br>
+											<span><small><b>{{vendor.kms}} km </b>away</small></span>
+										{% endif %}
+									</div>
+									<div class="list-option">
+										<a href="javascript:void(0);" class="shortlist-btn" data-toggle="modal" data-target="#sign-in">
+											<i class="icon-heart-o"></i>
+										</a>
+									</div>
+								</div>
+							</li>
+							{% endfor %}
+							
+							
+
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class=" max-w-6xl px-8 "><br><br>
+				<div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
+			
+						 <div class="h-32 rounded-lg ">
+							<h3 class="mb-0 h6" style="color:#DF1E1E;">Today @ 11:12</h3>
+							<strong>Never seen before:</strong> Billion people taking clickbait on SoMe every hour. <small class="text-muted text-uppercase">People</small>
+						</div>
+				  
+			   
+						<div class="h-32 rounded-lg ">
+							<h3 class="mb-0 h6" style="color:#DF1E1E;">Today @ 10:02</h3>
+							<span class="badge bg-warning text-dark"><strong>BREAKING</strong></span> Great and superfast websites can be made with simple technology. <small class="text-muted text-uppercase">Religion</small>
+						</div>
+					
+			  
+						<div class="h-32 rounded-lg ">
+							<h3 class="mb-0 h6" style="color:#DF1E1E;">Today @ 09:48</h3>
+							Google, Facebook and Apple announces they will respect privacy. <small class="text-muted text-uppercase">Corp BS</small>
+						</div>
+					  
+				   
+			 </div>
+			</div>
+
+
+
+
+
+
+		</div>
+	
+
+
+
+
+<!-- Main Section End -->
+
+</div>
+<!-- Choose From Most Popular Listing End -->
+
+<!-- Home Pages Elements End  -->
+</div>
+{% endblock %}
